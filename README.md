@@ -21,4 +21,4 @@ An OpenAI API key is required to interact with GPT. I have included a key with a
 - To fine tune BERT using MAGPIE dataset and test on SemEval data. 
 
 ## Text to text experiments 
-shubham_admire_experiments.ipynb
+- shubham_admire_experiments.ipynb
