@@ -22,3 +22,7 @@
 
 ## Text to text experiments 
 - `shubham_admire_experiments.ipynb`
+
+## Results
+- `experiment_results.csv` contains summarized results (accuracy, spearman rank, weighted accuracy) from all experiment configurations.
+- `combined_predictions.csv` contains detailed results for every sample for all experiment configurations. 
