@@ -1,5 +1,8 @@
 # semeval_2025_task1
 Code is provided as colab notebooks. 
+Data will be pulled in from our (public) Google drive and model definitions and weights are downloaded from online sources. 
+Notebooks perform any required training and evaluation. 
+An OpenAI API key is required to interact with GPT. 
 
 ## Prompting GPT, experiments with contrastive loss models
 admire_experiments_v2.ipynb
