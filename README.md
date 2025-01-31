@@ -1,4 +1,5 @@
 # semeval_2025_task1
+- Link to the task (https://semeval2025-task1.github.io/)
 - Code is provided as colab notebooks. 
 - Data will be pulled in from our (public) Google drive and model definitions and weights are downloaded from online sources. 
 - Notebooks perform any required training and evaluation. 
@@ -21,7 +22,9 @@
 - To fine tune BERT using MAGPIE dataset and test on SemEval data. 
 
 ## Text to text experiments 
-- `shubham_admire_experiments.ipynb`
+- `text_to_text_experiments.ipynb`
+- Image Captions with Context Sentence embedded in a VLM architecture
+- Sumamrized Image Captions with Context Sentence embedded in a VLM architecture
 
 ## Results
 - `experiment_results.csv` contains summarized results (accuracy, spearman rank, weighted accuracy) from all experiment configurations.
