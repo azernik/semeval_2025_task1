@@ -1,31 +1,22 @@
-# semeval_2025_task1
-- Link to the task (https://semeval2025-task1.github.io/)
-- Code is provided as colab notebooks. 
-- Data will be pulled in from our (public) Google drive and model definitions and weights are downloaded from online sources. 
-- Notebooks perform any required training and evaluation. 
-- An OpenAI API key is required to interact with GPT. I have included a key with a limit of $10, which should be more than enough to run everything a couple of times.
+# SemEval Idiom Interpretation Project
 
-## Prompting GPT, experiments with contrastive loss models
-- `admire_experiments_v2.ipynb`
-- Prompting GPT for definitions and classification of target phrases. 
-- Using these definitions as input to contrastive loss models (CLIP, ALIGN, OpenCLIP) and evaluate performance. 
+## SemEval_Admire_UCSC.ipynb
 
-## Fine tuning OpenCLIP
-- `tuning_open_clip.ipynb`
-- Pulls in results of prompting and fine tunes for the SemEval task applied to these different text input. 
+This notebook contains code for processing and analyzing idioms for the SemEval task:
 
-## Analysis and plots
-- `admire_results_analysis.ipynb`
+* **Data Processing**: Loads and preprocesses datasets (test or extended) containing idioms, sentences, and associated images
+* **Sentence Type Classification**: Uses GPT-4 to classify sentences as either literal or idiomatic usage of target phrases
+* **Idiom Definition Generation**: Implements two different prompting strategies to generate definitions for idiomatic phrases
+* **Multimodal Model Evaluation**: Evaluates several vision-language models (CLIP, OpenCLIP, ALIGN) on their ability to rank images based on idiom interpretations
+* **Results Export**: Exports classification results, definitions, and model predictions for further analysis
 
-## Type classifier
-- `sentence_type_classifier.ipynb`
-- To fine tune BERT using MAGPIE dataset and test on SemEval data. 
+## prompting_outputs
 
-## Text to text experiments 
-- `text_to_text_experiments.ipynb`
-- Image Captions with Context Sentence embedded in a VLM architecture
-- Sumamrized Image Captions with Context Sentence embedded in a VLM architecture
+The `prompting_outputs` directory contains the outputs for sentence type classification and idiom definition. Results are organized by dataset (test/extended).
 
-## Results
-- `experiment_results.csv` contains summarized results (accuracy, spearman rank, weighted accuracy) from all experiment configurations.
-- `combined_predictions.csv` contains detailed results for every sample for all experiment configurations. 
+* **Classification Files**: TSV files containing sentence type classifications (literal vs. idiomatic) for each idiom. Voting results are also included.
+* **Definition Files**: CSV files with definitions generated for each idiom using different prompting approaches.
+  * **exp4**: ...
+  * **exp5**: ...
+  * **exp6**: See `prompt_exp6_idiomatic` in notebook
+  * **exp7**: See `prompt_exp7_idiomatic` in notebook
